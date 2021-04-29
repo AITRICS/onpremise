@@ -183,7 +183,7 @@ SENTRY_DIGESTS = "sentry.digests.backends.redis.RedisBackend"
 ##############
 
 SENTRY_WEB_HOST = "0.0.0.0"
-SENTRY_WEB_PORT = 9000
+SENTRY_WEB_PORT = 80
 SENTRY_WEB_OPTIONS = {
     "http": "%s:%s" % (SENTRY_WEB_HOST, SENTRY_WEB_PORT),
     "protocol": "uwsgi",
@@ -264,7 +264,7 @@ SENTRY_FEATURES.update(
 # MaxMind Integration #
 #######################
 
-GEOIP_PATH_MMDB = '/geoip/GeoLite2-City.mmdb'
+GEOIP_PATH_MMDB = "/geoip/GeoLite2-City.mmdb"
 
 #########################
 # Bitbucket Integration #
