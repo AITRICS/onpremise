@@ -15,4 +15,4 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null \
   || { echo 'adding docker to sources list failed' ; exit 1; }
 
-apt-get update && apt-get install docker-ce docker-ce-cli containerd.io || { echo 'installation failed' ; exit 1; }
+sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io || { echo 'installation failed' ; exit 1; }
