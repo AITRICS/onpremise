@@ -16,3 +16,5 @@ echo \
   || { echo 'adding docker to sources list failed' ; exit 1; }
 
 sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io || { echo 'installation failed' ; exit 1; }
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose || { echo 'get docker-compose failed' ; exit 1; }
